@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11762"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YoutubeLikeVideoViewController" customModule="YoutubeVideoViewControllerDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="infoContainerView" destination="MSE-pE-p5T" id="36R-DG-fpo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewRectView" destination="EZS-yG-i8k" id="Yn8-o4-AdH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZS-yG-i8k">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EZS-yG-i8k" secondAttribute="height" multiplier="16:9" id="Z46-S6-BZ9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSE-pE-p5T">
+                    <rect key="frame" x="0.0" y="211" width="375" height="456"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MSE-pE-p5T" firstAttribute="top" secondItem="EZS-yG-i8k" secondAttribute="bottom" id="25Z-NO-vLw"/>
+                <constraint firstAttribute="trailing" secondItem="EZS-yG-i8k" secondAttribute="trailing" id="4UB-zg-5HC"/>
+                <constraint firstItem="EZS-yG-i8k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="58R-zK-Qn8"/>
+                <constraint firstItem="EZS-yG-i8k" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LFa-FT-NUS"/>
+                <constraint firstItem="MSE-pE-p5T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZAn-kQ-Amd"/>
+                <constraint firstAttribute="trailing" secondItem="MSE-pE-p5T" secondAttribute="trailing" id="aB8-lo-nhh"/>
+                <constraint firstAttribute="bottom" secondItem="MSE-pE-p5T" secondAttribute="bottom" id="fPv-Ce-Pn9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

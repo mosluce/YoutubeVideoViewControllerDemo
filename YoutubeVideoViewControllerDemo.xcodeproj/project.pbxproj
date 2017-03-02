@@ -12,6 +12,12 @@
 		442CAEAA1E683BBA00960DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442CAEA81E683BBA00960DAB /* Main.storyboard */; };
 		442CAEAC1E683BBA00960DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442CAEAB1E683BBA00960DAB /* Assets.xcassets */; };
 		442CAEAF1E683BBA00960DAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442CAEAD1E683BBA00960DAB /* LaunchScreen.storyboard */; };
+		442CAEB81E683BE500960DAB /* YoutubeLikeVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CAEB61E683BE500960DAB /* YoutubeLikeVideoViewController.swift */; };
+		442CAEB91E683BE500960DAB /* YoutubeLikeVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442CAEB71E683BE500960DAB /* YoutubeLikeVideoViewController.xib */; };
+		442CAEBC1E6858D100960DAB /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CAEBB1E6858D100960DAB /* VideoListViewController.swift */; };
+		442CAEBE1E6858E100960DAB /* VideoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442CAEBD1E6858E100960DAB /* VideoListViewController.xib */; };
+		442CAEC31E685DB300960DAB /* VideoListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CAEC11E685DB300960DAB /* VideoListItemCell.swift */; };
+		442CAEC41E685DB300960DAB /* VideoListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442CAEC21E685DB300960DAB /* VideoListItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,13 @@
 		442CAEAB1E683BBA00960DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		442CAEAE1E683BBA00960DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		442CAEB01E683BBA00960DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442CAEB61E683BE500960DAB /* YoutubeLikeVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeLikeVideoViewController.swift; sourceTree = "<group>"; };
+		442CAEB71E683BE500960DAB /* YoutubeLikeVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YoutubeLikeVideoViewController.xib; sourceTree = "<group>"; };
+		442CAEBA1E684F4F00960DAB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		442CAEBB1E6858D100960DAB /* VideoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
+		442CAEBD1E6858E100960DAB /* VideoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoListViewController.xib; sourceTree = "<group>"; };
+		442CAEC11E685DB300960DAB /* VideoListItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListItemCell.swift; sourceTree = "<group>"; };
+		442CAEC21E685DB300960DAB /* VideoListItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoListItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +67,29 @@
 		442CAEA31E683BBA00960DAB /* YoutubeVideoViewControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				442CAEBF1E685D8B00960DAB /* Views */,
 				442CAEA41E683BBA00960DAB /* AppDelegate.swift */,
 				442CAEA61E683BBA00960DAB /* ViewController.swift */,
 				442CAEA81E683BBA00960DAB /* Main.storyboard */,
+				442CAEB61E683BE500960DAB /* YoutubeLikeVideoViewController.swift */,
+				442CAEB71E683BE500960DAB /* YoutubeLikeVideoViewController.xib */,
+				442CAEBB1E6858D100960DAB /* VideoListViewController.swift */,
+				442CAEBD1E6858E100960DAB /* VideoListViewController.xib */,
 				442CAEAB1E683BBA00960DAB /* Assets.xcassets */,
 				442CAEAD1E683BBA00960DAB /* LaunchScreen.storyboard */,
 				442CAEB01E683BBA00960DAB /* Info.plist */,
+				442CAEBA1E684F4F00960DAB /* MyPlayground.playground */,
 			);
 			path = YoutubeVideoViewControllerDemo;
+			sourceTree = "<group>";
+		};
+		442CAEBF1E685D8B00960DAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				442CAEC11E685DB300960DAB /* VideoListItemCell.swift */,
+				442CAEC21E685DB300960DAB /* VideoListItemCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +126,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8E5H4JDK8B;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,8 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				442CAEAF1E683BBA00960DAB /* LaunchScreen.storyboard in Resources */,
+				442CAEBE1E6858E100960DAB /* VideoListViewController.xib in Resources */,
+				442CAEC41E685DB300960DAB /* VideoListItemCell.xib in Resources */,
 				442CAEAC1E683BBA00960DAB /* Assets.xcassets in Resources */,
 				442CAEAA1E683BBA00960DAB /* Main.storyboard in Resources */,
+				442CAEB91E683BE500960DAB /* YoutubeLikeVideoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442CAEC31E685DB300960DAB /* VideoListItemCell.swift in Sources */,
 				442CAEA71E683BBA00960DAB /* ViewController.swift in Sources */,
+				442CAEB81E683BE500960DAB /* YoutubeLikeVideoViewController.swift in Sources */,
+				442CAEBC1E6858D100960DAB /* VideoListViewController.swift in Sources */,
 				442CAEA51E683BBA00960DAB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +339,7 @@
 				442CAEB51E683BBA00960DAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
